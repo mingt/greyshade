@@ -45,6 +45,7 @@ article{
 	code, pre{
 		background: $pre-bg;
 		border: 1px solid $pre-border;
+		border-radius: 5px;
 		font-family: $font-mono;
 	}
 	code{
@@ -71,6 +72,8 @@ figure.code{
 	border: 1px solid $pre-border;
 	margin-top: 10px;
 	padding: 5px 15px;
+	background: #ddd;
+	border-radius: 5px;
 	figcaption{
 		font-size: 0.9em;
 		position: relative;
@@ -92,7 +95,7 @@ figure.code{
 	code, pre{
 		background: none;
 		border: none;
-		padding: 0;
+		padding: 5px 0 0 0;
 		margin: 0;
 	}
 	.highlight{
@@ -105,7 +108,7 @@ figure.code{
 		text-align: right;
 	}
 	table{
-		background: white;
+		background: #ddd;
 		border: none;
 		text-align: left;
 		margin-top: 0;
