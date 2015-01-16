@@ -327,6 +327,20 @@ $header-height: 30px;
 					border: 1px solid darken(#050505, 10%);
 				}
 			}
+            &.weibo{
+                background: image-url('social/weibo.png') center no-repeat #e32529;
+                border: 1px solid #DA251C;
+                &:hover{
+                    border: 1px solid darken(#DA251C, 10%);
+                }
+            }
+            &.dribbble{
+                background: image-url('social/dribbble.png') center no-repeat #c5376d;
+                border: 1px solid #c5376d;
+                &:hover{
+                    border: 1px solid darken(#c5376d, 10%);
+                }
+            }
 			&.facebook{
 				background: image-url('social/facebook.png') center no-repeat #3B5998;
 				border: 1px solid #3B5998;

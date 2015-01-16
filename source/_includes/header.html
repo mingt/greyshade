@@ -8,6 +8,9 @@
 		{% if site.email %}
 			<a class="email" href="mailto:{{ site.email }}" title="Email">Email</a>
 		{% endif %}
+        {% if site.weibo_user %}
+        <a class="weibo" href="http://www.weibo.com/{{ site.weibo_user }}" title="Weibo" target="_blank">Weibo</a>
+        {% endif %}
 		{% if site.facebook_user %}
 			<a class="facebook" href="http://www.facebook.com/{{ site.facebook_user }}" title="Facebook" target="_blank">Facebook</a>
 		{% endif %}
@@ -20,6 +23,9 @@
 		{% if site.github_user %}
 			<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub" target="_blank">GitHub</a>
 		{% endif %}
+        {% if site.dribbble_user %}
+        <a class="dribbble" href="http://www.dribbble.com/{{ site.dribbble_user }}" title="Dribbble">Dribbble</a>
+        {% endif %}
 		{% if site.coderwall_user %}
 			<a class="coderwall" href="https://coderwall.com/{{ site.coderwall_user }}" title="Coderwall" target="_blank">Coderwall</a>
 		{% endif %}
