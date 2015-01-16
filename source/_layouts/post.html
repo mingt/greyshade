@@ -2,9 +2,13 @@
 layout: default
 single: true
 sharing: false
+sharing_jiathis: true
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">{% include article.html %}</article>
+{% unless page.sharing_jiathis == false %}
+	{% include post/sharing_jiathis.html %}
+{% endunless %}
 {% unless page.sharing == false %}
 	{% include post/sharing.html %}
 {% endunless %}
