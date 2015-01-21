@@ -272,6 +272,25 @@ body {
 	}
 }
 
+.categories_list_header {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    h1 {
+        padding-bottom: 10px;
+    }
+    ul {
+        overfloat: hidden;
+        height: 40px;
+        list-style-type: none;
+        li {
+            float: left;
+            line-height: 30px;
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+    }
+}
+
 .archives {
 	.title {
 		font-size: 1.2em !important;

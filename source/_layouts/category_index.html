@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<section class="categories_list_header">
+  <h1>文章分类统计:</h1>
+  <ul id="categories_stats">
+    {% category_list %}
+  </ul>
+</section>
 {% for post in site.categories[page.category] %}
 	{% include archive_post.html %}
 {% endfor %}

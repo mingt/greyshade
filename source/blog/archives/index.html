@@ -4,6 +4,12 @@ title: 分类归档
 ---
 
 <div itemscope itemtype="http://schema.org/Blog">
+<section class="categories_list_header">
+  <h1>文章分类统计:</h1>
+  <ul id="categories_stats">
+    {% category_list %}
+  </ul>
+</section>
 {% for post in site.posts reverse %}
 	{% include archive_post.html %}
 {% endfor %}
