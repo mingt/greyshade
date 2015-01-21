@@ -94,6 +94,7 @@ body {
 		  text-align: center;
 		  margin: 0px 70px 0px 40px;
 		  width: auto;
+          max-width: 800px; // align to .mid-col-container max-width below
 		}
 		.mid-col-container {
 			// I like the old paddings better//padding: 0px 70px 0px 100px;
