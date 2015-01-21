@@ -1,7 +1,4 @@
-<p>Copyright &copy; {{ site.time | date: "%Y" }} - 
-{% if site.author %}
-    {{ site.author }}
-{% else %}
-    {{ site.title }}
-{% endif %}
- - <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span></p>
+<p>Copyright &copy; {{ site.time | date: "%Y" }}
+ - {% if site.author %} {{ site.author }} {% else %} {{ site.title }} {% endif %}
+ - <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备15004970号</a>
+ - <span class="credit">Powered by <a href="http://octopress.org/" target="_blank">Octopress</a></span></p>
