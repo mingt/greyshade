@@ -11,10 +11,13 @@ layout: default
 </div>
 <nav id="pagenavi">
     {% if paginator.previous_page %}
-        <a href="{{paginator.previous_page}}" class="prev">Prev</a>
+        <a href="{{paginator.previous_page_path}}" class="prev">Prev</a>
     {% endif %}
     {% if paginator.next_page %}
-        <a href="{{paginator.next_page}}" class="next">Next</a>
+        <a href="{{paginator.next_page_path}}" class="next">Next</a>
     {% endif %}
-    <div class="center"><a href="{{ root_url }}/blog/archives">分类归档</a></div>
+    <div class="center"><a href="{{ root_url }}/blog/archives">分类归档</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="page_number ">当前页: {{ paginator.page }} of {{ paginator.total_pages }}</span> 
+    </div>
 </nav>
