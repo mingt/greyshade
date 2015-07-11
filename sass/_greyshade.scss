@@ -154,12 +154,37 @@ body {
 								margin-top: 0px;
 							}
 						}
-						table {
+                        table {
 							line-height: 1.2em;
-							td {
-								text-align: left;
-							}
-						}
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            border:0;
+                            margin: .5em 1em 1em 0;
+                            width:100%; /* consistent table widths; within IE's quirks */
+                            background-color:#f7f7f7 !important;
+                            th, td {
+                              padding: 5px 12px;
+                              vertical-align: top;
+                              text-align: left;
+                            }
+                            td {
+                              background-color:inherit;
+                              border:solid 1px #DDD;
+                            }
+                            td *:last-child {
+                              margin-bottom:0;
+                            }
+                            th {
+                              background-color: #999;
+                              color: #fff;
+                              border:solid 1px #DDD;
+                              font-weight: normal;
+                              line-height: 2em;
+                            }
+                            tr:first-of-type th:first-of-type:empty {
+                                visibility: hidden;
+                            }
+                        }
 					}
 					.meta {
 						position: relative;
